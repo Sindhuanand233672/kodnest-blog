@@ -1,0 +1,538 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ece7dc;
+    color:#111;
+    font-family:'Cormorant Garamond', serif;
+    overflow-x:hidden;
+}
+
+/* =========================================================
+   GLOBAL CONTAINER
+========================================================= */
+
+section,
+header,
+footer{
+    width:100%;
+    max-width:1450px;
+    margin:auto;
+    padding-left:70px;
+    padding-right:70px;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.top-header{
+    padding-top:18px;
+    border-bottom:2px solid #111;
+}
+
+.edition-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:13px;
+    letter-spacing:4px;
+    padding-bottom:18px;
+    border-bottom:1px solid #555;
+    text-transform:uppercase;
+}
+
+.main-title{
+    text-align:center;
+    padding:55px 0 42px;
+}
+
+.main-title h1{
+    font-family:'Playfair Display', serif;
+    font-size:120px;
+    line-height:0.9;
+    letter-spacing:-3px;
+    font-weight:800;
+}
+
+.main-title p{
+    margin-top:30px;
+    font-size:16px;
+    letter-spacing:8px;
+}
+
+.navbar{
+    display:flex;
+    justify-content:center;
+    gap:65px;
+    padding:22px 0;
+    border-top:1px solid #111;
+    border-bottom:1px solid #111;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#111;
+    font-size:14px;
+    letter-spacing:3px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    opacity:0.6;
+}
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero-section{
+    display:grid;
+    grid-template-columns:2fr 0.9fr;
+    gap:70px;
+    padding-top:90px;
+    padding-bottom:90px;
+    align-items:start;
+}
+
+.section-tag{
+    font-size:14px;
+    letter-spacing:5px;
+    margin-bottom:30px;
+    text-transform:uppercase;
+}
+
+.hero-left h2{
+    font-family:'Playfair Display', serif;
+    font-size:82px;
+    line-height:0.95;
+    margin-bottom:35px;
+    max-width:900px;
+    letter-spacing:-2px;
+}
+
+.hero-description{
+    font-size:30px;
+    line-height:1.7;
+    margin-bottom:45px;
+    max-width:1000px;
+}
+
+.article-columns{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    margin-bottom:50px;
+}
+
+.article-columns p{
+    font-size:24px;
+    line-height:1.9;
+}
+
+.hero-left img{
+    width:100%;
+    height:560px;
+    object-fit:cover;
+    border:2px solid #111;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.hero-sidebar{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+.sidebar-card{
+    border:1.5px solid #111;
+    padding:40px;
+    background:#f5efe5;
+}
+
+.sidebar-card h3{
+    font-family:'Playfair Display', serif;
+    font-size:42px;
+    margin-bottom:28px;
+    border-bottom:1px solid #999;
+    padding-bottom:18px;
+}
+
+.sidebar-card ul{
+    list-style:none;
+}
+
+.sidebar-card li{
+    padding:18px 0;
+    border-bottom:1px dashed #aaa;
+    font-size:24px;
+    line-height:1.5;
+}
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-heading{
+    text-align:center;
+    margin-bottom:65px;
+}
+
+.section-heading h2{
+    font-family:'Playfair Display', serif;
+    font-size:88px;
+    line-height:1;
+    letter-spacing:-2px;
+}
+
+/* =========================================================
+   MATRIX SECTION
+========================================================= */
+
+.matrix-section{
+    padding-top:40px;
+    padding-bottom:100px;
+}
+
+.matrix-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:50px;
+    background:#f5efe5;
+}
+
+.matrix-table th{
+    background:#111;
+    color:#fff;
+    padding:30px;
+    font-size:28px;
+    letter-spacing:1px;
+    text-align:left;
+}
+
+.matrix-table td{
+    border:1px solid #999;
+    padding:30px;
+    font-size:28px;
+    line-height:1.6;
+}
+
+.matrix-table tr:nth-child(even){
+    background:#eee7dc;
+}
+
+/* =========================================================
+   PLACEMENT SECTION
+========================================================= */
+
+.placements-section{
+    padding-top:30px;
+    padding-bottom:110px;
+}
+
+.placement-layout{
+    display:grid;
+    grid-template-columns:0.9fr 2fr;
+    gap:50px;
+    align-items:start;
+}
+
+.placement-title h2{
+    font-family:'Playfair Display', serif;
+    font-size:92px;
+    line-height:0.95;
+    position:sticky;
+    top:120px;
+}
+
+.placement-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+.placement-card{
+    border-top:5px solid #111;
+    padding-top:18px;
+}
+
+.placement-card img{
+    width:100%;
+    height:240px;
+    object-fit:contain;
+    background:#000;
+    margin-bottom:25px;
+}
+
+.placement-card h3{
+    font-family:'Playfair Display', serif;
+    font-size:52px;
+    line-height:1;
+    margin-bottom:20px;
+    letter-spacing:-1px;
+}
+
+.placement-card p{
+    font-size:24px;
+    line-height:1.8;
+}
+
+/* =========================================================
+   CAMPUS SECTION
+========================================================= */
+
+.campus-section{
+    padding-top:50px;
+    padding-bottom:100px;
+}
+
+.campus-layout{
+    display:grid;
+    grid-template-columns:0.9fr 1.4fr 0.9fr 0.9fr 0.9fr;
+    gap:28px;
+    align-items:start;
+}
+
+.campus-main h2{
+    font-family:'Playfair Display', serif;
+    font-size:88px;
+    line-height:0.95;
+    margin-bottom:40px;
+}
+
+.campus-main p{
+    font-size:26px;
+    line-height:2;
+    margin-bottom:28px;
+}
+
+.essay-card{
+    border:1px solid #888;
+    background:#f5efe5;
+    padding:18px;
+}
+
+.essay-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.essay-card h4{
+    font-family:'Playfair Display', serif;
+    font-size:42px;
+    line-height:1.1;
+    margin-bottom:18px;
+}
+
+.essay-card p{
+    font-size:22px;
+    line-height:1.9;
+}
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stats-section{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding-bottom:100px;
+}
+
+.stat-box{
+    border:1.5px solid #111;
+    padding:70px 20px;
+    text-align:center;
+    background:#f5efe5;
+}
+
+.stat-box h2{
+    font-family:'Playfair Display', serif;
+    font-size:82px;
+    margin-bottom:14px;
+}
+
+.stat-box p{
+    letter-spacing:4px;
+    font-size:15px;
+}
+
+/* =========================================================
+   STORIES
+========================================================= */
+
+.stories-section{
+    padding-bottom:120px;
+}
+
+.stories-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:50px;
+}
+
+.story-card{
+    border-left:4px solid #111;
+    padding-left:30px;
+}
+
+.story-card h3{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+    line-height:1.4;
+    margin-bottom:20px;
+}
+
+.story-card p{
+    font-size:24px;
+    line-height:1.8;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    border-top:2px solid #111;
+    padding-top:70px;
+    padding-bottom:60px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:60px;
+}
+
+.footer-grid h3{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.footer-grid p{
+    font-size:24px;
+    line-height:2;
+}
+
+.copyright{
+    text-align:center;
+    padding-top:70px;
+    font-size:15px;
+    letter-spacing:4px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1200px){
+
+    section,
+    header,
+    footer{
+        padding-left:35px;
+        padding-right:35px;
+    }
+
+    .hero-section,
+    .placement-layout,
+    .campus-layout,
+    .placement-grid,
+    .stories-grid,
+    .stats-section{
+        grid-template-columns:1fr;
+    }
+
+    .main-title h1{
+        font-size:74px;
+    }
+
+    .hero-left h2{
+        font-size:56px;
+    }
+
+    .section-heading h2{
+        font-size:56px;
+    }
+
+    .placement-title h2{
+        position:relative;
+        top:0;
+        font-size:64px;
+        margin-bottom:30px;
+    }
+
+    .campus-main h2{
+        font-size:60px;
+    }
+
+    .matrix-table{
+        display:block;
+        overflow-x:auto;
+    }
+
+    .navbar{
+        flex-wrap:wrap;
+        gap:25px;
+    }
+
+    .article-columns{
+        grid-template-columns:1fr;
+    }
+
+    .essay-card img{
+        height:420px;
+    }
+}
+
+@media(max-width:768px){
+
+    .main-title h1{
+        font-size:58px;
+    }
+
+    .hero-left h2{
+        font-size:44px;
+    }
+
+    .hero-description{
+        font-size:22px;
+    }
+
+    .placement-card h3,
+    .story-card h3,
+    .essay-card h4{
+        font-size:36px;
+    }
+
+    .campus-main h2{
+        font-size:46px;
+    }
+
+    .section-heading h2{
+        font-size:46px;
+    }
+
+    .stat-box h2{
+        font-size:54px;
+    }
+}
